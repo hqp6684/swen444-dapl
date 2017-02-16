@@ -1,3 +1,11 @@
+Requirement: 
+  Node
+After a fresh clone
+  `npm install` to install server to serve html
+  `npm run serve` to run the server. Default port is 3000
+  
+  
+================== HTML5 UP Template ==========================================
 Editorial by HTML5 UP
 html5up.net | @ajlkn
 Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
