@@ -1,0 +1,24 @@
+{
+  "name": "editor",
+  "version": "1.0.0",
+  "description": "Editorial by HTML5 UP\r html5up.net | @ajlkn\r Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve" : "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hqp6684/swen444-dapl.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hqp6684/swen444-dapl/issues"
+  },
+  "homepage": "https://github.com/hqp6684/swen444-dapl#readme",
+  "devDependencies": {
+    "lite-server": "^2.2.2"
+  }
+}
