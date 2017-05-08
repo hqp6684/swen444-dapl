@@ -1,0 +1,268 @@
+<!DOCTYPE HTML>
+<!--
+	Future Imperfect by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+
+	Pipeline UX Prototype by Environment X
+	Simply for non-commercial, mockup purposes only.
+	4/12/17
+-->
+<html>
+
+<head>
+  <title>Pipeline - Topic</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="images/23.jpg" type="image/x-icon" />
+  <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/huy.css" />
+  <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+  <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+  <script src="assets/js/cookie.js"></script>
+</head>
+
+<body onload="initSidebar(); checkLogin()">
+
+  <!-- Wrapper -->
+  <div id="wrapper">
+
+    <!-- Header -->
+    <header id="header">
+      <h1>
+        <a href="./index.html" class="logo"><img src="images/44.jpg" width="500" height="55" alt="Logo" /></a>
+      </h1>
+      <nav class="links">
+        <ul>
+          <li><a href="./news.html">News</a></li>
+          <li><a href="./scholarly_articles.html">Scholarly Articles</a></li>
+          <li><a href="./petitions.html">Petitions</a></li>
+          <li><a href="./discussions.html">Discussions</a></li>
+        </ul>
+      </nav>
+      <nav class="main">
+        <ul>
+          <li class="search">
+            <a class="fa-search" href="#search">Search</a>
+            <form id="search" method="get" action="#">
+              <input type="text" name="query" placeholder="Search" />
+            </form>
+          </li>
+          <li class="menu">
+            <a class="fa-bars" href="#menu">Menu</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Menu -->
+    <section id="menu">
+
+      <!-- Actions -->
+      <section>
+          <ul class="actions vertical">
+              <span id="userNotLogin">
+                  <li><a href="login.html" class="button big fit">Log In</a></li>
+                  <li><a href="register.html" class="button big fit">Register</a></li>
+              </span>
+              <li id="userLogin"><a href="index.html" class="button big fit" onclick="logout()">Log out</a></li>
+          </ul>
+      </section>
+
+      <!-- Links -->
+      <section>
+        <a href="#" style="margin-right: 50px;" class="logo"><img src="images/us.png" alt="Logo" />English</a>
+        <a href="#" style="margin-right: 60px;" class="logo"><img src="images/es.png" alt="Logo" />Espa&ntilde;ol</a>
+        <a href="#" class="logo"><img src="images/cn.png" alt="Logo" />中文</a>
+      </section>
+
+      <section>
+        <center>
+          <button class="logo" onclick="toggleSidebar()">Toggle News Bar</button>
+        </center>
+      </section>
+
+    </section>
+
+    <!-- Main -->
+    <div id="main">
+
+      <!-- Post -->
+      <article class="post">
+        <header style="margin-bottom:0">
+          <div class="title">
+            <h2><a href="#">Do You Think Pipelines Should Be Illegal?</a></h2>
+            <p>There has been quite a lot of (insert superfluous words and facts here)...</p>
+            <b>
+                      Started on:
+                      <time class="published" datetime="2015-11-01">November 1, 2015 3:59AM UTC-04</time>
+                    </b>
+            <a href="#" class="author"><span class="name">By Frank K.</span><img src="images/pic03.jpg" alt="" /></a>
+          </div>
+        </header>
+        <!-- Add Dummy Comments Here -->
+        <div id="chatContainer">
+          <div class="border">
+            <form class="chat">
+              <span></span>
+              <div class="messages" id="adobewordpress">
+                <div class="message">
+                  <div class="myMessage">
+                    <p>
+                      <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est reiciendis error quidem soluta, commodi, assumenda eius illum dolore iusto tempore, asperiores consequatur voluptatum laborum minus consectetur! Dolor dolores hic ipsam.</span>
+                      <span>Explicabo asperiores corporis beatae facere neque quae, fuga ipsum aspernatur! Eaque officiis, molestias autem ipsam eum nesciunt dolorem, sit sunt rerum maxime quisquam, temporibus harum commodi nihil incidunt libero, esse.</span>
+                      <span>Esse nisi laborum neque, facilis velit ad laudantium facere, vel amet, expedita enim consequuntur! Architecto aut illum, saepe iste animi repellat nobis quasi voluptatum sapiente, accusamus obcaecati minus dolor sunt?</span>
+                    </p>
+                    <date><b>John Doe</b> 08.03.2016 14:30:7</date>
+                  </div>
+                </div>
+                <div class="message">
+                  <div class="fromThem">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem nostrum odio perspiciatis soluta
+                      ipsa, impedit fugiat dignissimos doloribus officiis tempore nihil, consequuntur dolore eum repudiandae
+                      aperiam voluptates, praesentium assumenda ad!</p>
+                    <date><b>Vatanay</b> 08.03.2016 14:31:22</date>
+                  </div>
+                </div>
+                <div class="message">
+                  <div class="myMessage">
+                    <p>Yep, is this design responsive?</p>
+                    <date><b>John Doe</b> 08.03.2016 14:33:32</date>
+                  </div>
+                </div>
+                <div class="message">
+                  <div class="myMessage">
+                    <p>By the way when I hover on my message it shows date.</p>
+                    <date><b>John Doe</b> 08.03.2016 14:36:4</date>
+                  </div>
+                </div>
+                <div class="message">
+                  <div class="fromThem">
+                    <p>Yes, this is completely responsive.</p>
+                    <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem aperiam culpa autem repellendus distinctio, magnam esse asperiores. Inventore explicabo dolores, consectetur harum deserunt aliquam, velit voluptatem eaque aspernatur dignissimos dicta.</span><span>Omnis minus ad accusamus. Maxime sit omnis fugiat itaque sequi cupiditate hic ea vero eligendi vel laborum iure suscipit dolorem harum, placeat ad ut. Eos laborum minima quod, magni vel?</span></p>
+                    <date><b>Vatanay</b> 08.03.2016 14:37:12</date>
+                  </div>
+                </div>
+                <div class="message">
+                  <div class="myMessage">
+                    <p>It looks beautiful!</p>
+                    <date><b>John Doe</b> 08.03.2016 14:30:7</date>
+                  </div>
+                </div>
+                <div class="message">
+                  <div class="fromThem">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem nostrum odio perspiciatis soluta
+                      ipsa, impedit fugiat dignissimos doloribus officiis tempore nihil, consequuntur dolore eum repudiandae
+                      aperiam voluptates, praesentium assumenda ad!</p>
+                    <date><b>Vatanay</b> 08.03.2016 14:31:22</date>
+                  </div>
+                </div>
+                <div class="message">
+                  <div class="myMessage">
+                    <p>Yep, is this design responsive?</p>
+                    <date><b>John Doe</b> 08.03.2016 14:33:32</date>
+                  </div>
+                </div>
+                <div class="message">
+                  <div class="myMessage">
+                    <p>By the way when I hover on my message it shows date.</p>
+                    <date><b>John Doe</b> 08.03.2016 14:36:4</date>
+                  </div>
+                </div>
+                <div class="message">
+                  <div class="fromThem">
+                    <p>Yes, this is completely responsive.</p>
+                    <date><b>Vatanay</b> 08.03.2016 14:37:12 | <b>Report</b></date>
+                  </div>
+                </div>
+              </div>
+              <input type="text" placeholder="Your comment" required>
+              <input type="submit" style="text-align:center" value="Send">
+            </form>
+          </div>
+        </div>
+      </article>
+
+
+    </div>
+
+    <!-- Sidebar -->
+    <section id="sidebar">
+
+      <!-- Intro -->
+      <section id="intro">
+        <header>
+          <h2>Pipeline</h2>
+          <p><b>Dakota Access Pipeline Info. Without the Crude.<b></p>
+                  </header>
+                </section>
+
+          <!-- Mini Posts -->
+            <section>
+              <div class="mini-posts">
+
+                <!-- Mini Post -->
+                  <article class="mini-post">
+                    <header>
+                      <h3><a href="http://www.cnn.com/2017/01/24/politics/trump-keystone-xl-dakota-access-pipelines-executive-actions/">Trump advances controversial oil pipelines with executive action</a></h3>
+                      <time class="published" datetime="2017-1-24">January 24, 2017</time>
+                      <a href="http://www.cnn.com/2017/01/24/politics/trump-keystone-xl-dakota-access-pipelines-executive-actions/" class="author"></a>
+                    </header>
+                    <a href="http://www.cnn.com/2017/01/24/politics/trump-keystone-xl-dakota-access-pipelines-executive-actions/" class="image"><img src="images/pic04.jpg" alt="" /></a>
+                  </article>
+
+                <!-- Mini Post -->
+                  <article class="mini-post">
+                    <header>
+                      <h3><a href="http://www.kfyrtv.com/content/news/Morton-County-responds-to-rumoured-crop-sprayer-near-DAPL-protesters-395335861.html">Morton County addresses crop sprayer near DAPL protesters</a></h3>
+                      <time class="published" datetime="2016-10-19">October 19, 2016</time>
+                      <a href="http://www.kfyrtv.com/content/news/Morton-County-responds-to-rumoured-crop-sprayer-near-DAPL-protesters-395335861.html" class="author"></a>
+                    </header>
+                    <a href="http://www.kfyrtv.com/content/news/Morton-County-responds-to-rumoured-crop-sprayer-near-DAPL-protesters-395335861.html" class="image"><img src="images/pic05.jpg" alt="" /></a>
+                  </article>
+
+                <!-- Mini Post -->
+                  <article class="mini-post">
+                    <header>
+                      <h3><a href="http://www.breitbart.com/big-government/2016/08/10/approval-of-new-keystone-pipeline-outrages-environmentalists/">Approval of ‘New’ Keystone Pipeline Outrages Environmentalists</a></h3>
+                      <time class="published" datetime="2016-8-10">August 10, 2016</time>
+                      <a href="http://www.breitbart.com/big-government/2016/08/10/approval-of-new-keystone-pipeline-outrages-environmentalists/" class="author"></a>
+                    </header>
+                    <a href="http://www.breitbart.com/big-government/2016/08/10/approval-of-new-keystone-pipeline-outrages-environmentalists/" class="image"><img src="images/pic06.jpg" alt="" /></a>
+                  </article>
+
+                </div>
+              </section>
+
+            <!-- About -->
+              <section class="blurb">
+                <h2>About</h2>
+                <p>Pipeline is your one-stop shop for all things concerning the Dakota Access Pipeline (DAPL).</p>
+              </section>
+
+        <!-- Footer -->
+          <section id="footer">
+            <ul class="icons">
+              <li><a href="#" class="fa-twitter"><span class="label">Twitter</span></a></li>
+              <li><a href="#" class="fa-facebook"><span class="label">Facebook</span></a></li>
+              <li><a href="#" class="fa-instagram"><span class="label">Instagram</span></a></li>
+              <li><a href="#" class="fa-rss"><span class="label">RSS</span></a></li>
+              <li><a href="#" class="fa-envelope"><span class="label">Email</span></a></li>
+            </ul>
+            <p class="copyright">&copy; Environment X Design: <a href="http://html5up.net">HTML5 UP</a>. Images: <a href="http://unsplash.com">Unsplash</a>.</p>
+          </section>
+
+      </div>
+
+    <!-- Scripts -->
+      <script src="assets/js/jquery.min.js"></script>
+      <script src="assets/js/skel.min.js"></script>
+      <script src="assets/js/util.js"></script>
+      <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+      <script src="assets/js/main.js"></script>
+
+      <script src="assets/js/huy.js"></script>
+
+  </body>
+</html>

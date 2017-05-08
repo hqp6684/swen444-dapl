@@ -1,0 +1,161 @@
+<!DOCTYPE HTML>
+<!--
+	Future Imperfect by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+
+	Pipeline UX Prototype by Environment X
+	Simply for non-commercial, mockup purposes only.
+	4/12/17
+-->
+<html>
+
+<head>
+  <title>Pipeline - Home</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="images/23.jpg" type="image/x-icon" />
+  <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+  <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="http://www.webglearth.com/v2/api.js"></script>
+  <script src="assets/js/cookie.js"></script>
+</head>
+
+<body onload="checkLogin()">
+
+  <!-- Wrapper -->
+  <div id="wrapper">
+
+    <!-- Header -->
+    <header id="header">
+      <h1>
+        <a href="./index.html" class="logo"><img src="images/44.jpg" width="500" height="55" alt="Logo" /></a>
+      </h1>
+      <nav class="links">
+        <ul>
+          <li><a href="./news.html">News</a></li>
+          <li><a href="./scholarly_articles.html">Scholarly Articles</a></li>
+          <li><a href="./petitions.html">Petitions</a></li>
+          <li><a href="./discussions.html">Discussions</a></li>
+        </ul>
+      </nav>
+      <nav class="main">
+        <ul>
+          <li class="search">
+            <a class="fa-search" href="#search">Search</a>
+            <form id="search" method="get" action="#">
+              <input type="text" name="query" placeholder="Search" />
+            </form>
+          </li>
+          <li class="menu">
+            <a class="fa-bars" href="#menu">Menu</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Menu -->
+    <section id="menu">
+
+      <!-- Search -->
+      <section>
+        <form class="search" method="get" action="#">
+          <input type="text" name="query" placeholder="Search" />
+        </form>
+      </section>
+
+      <!-- Links -->
+      <section>
+        <ul class="links">
+          <li>
+            Language
+            <a href="#" class="logo"><img src="images/us.png" alt="Logo" />
+              <h3>English</h3>
+            </a>
+            <a href="#" class="logo"><img src="images/es.png" alt="Logo" />
+              <h3>Espa&ntilde;ol</h3>
+            </a>
+            <a href="#" class="logo"><img src="images/cn.png" alt="Logo" />
+              <h3>中文</h3>
+            </a>
+          </li>
+          <li>
+            <a class="logo" style="cursor: pointer" onclick="toggleSidebar()">
+              <h3>Toggle Sidenav</h3>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Actions -->
+      <section>
+        <ul class="actions vertical">
+          <span id="userNotLogin">
+                        <li><a href="login.html" class="button big fit">Log In</a></li>
+                        <li><a href="register.html" class="button big fit">Register</a></li>
+                    </span>
+          <li id="userLogin"><a href="index.html" class="button big fit" onclick="logout()">Log out</a></li>
+        </ul>
+      </section>
+
+    </section>
+
+    <!-- Main -->
+    <div id="main">
+
+      <!-- Globe & Parts -->
+      <h1>Login</h1>
+      <form action="index.html" method="POST" onsubmit="goCookie()">
+        <input type="text" id="user" placeholder="Username" name="user" required>
+        <input type="password" id="pass" placeholder="Password" name="pass" required>
+        <button type="submit" class="button big fit">Login</button>
+      </form>
+
+    </div>
+
+    <!-- Sidebar -->
+    <section id="sidebar">
+
+      <!-- Intro -->
+      <section id="intro">
+        <header>
+          <h2>Pipeline</h2>
+          <p><b>Dakota Access Pipeline Info. Without the Crude.<b></p>
+				</header>
+			</section>
+
+						<!-- About -->
+							<section class="blurb">
+								<h2>About</h2>
+								<p>Pipeline is your one-stop shop for all things concerning the Dakota Access Pipeline (DAPL).</p>
+							</section>
+
+						<!-- Footer -->
+							<section id="footer">
+								<ul class="icons">
+									<li><a href="#" class="fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="fa-facebook"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="fa-rss"><span class="label">RSS</span></a></li>
+									<li><a href="#" class="fa-envelope"><span class="label">Email</span></a></li>
+								</ul>
+								<p class="copyright">&copy; Environment X Design: <a href="http://html5up.net">HTML5 UP</a>. Images: <a href="http://unsplash.com">Unsplash</a>.</p>
+							</section>
+
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+      <script src="assets/js/huy.js"></script>
+
+	</body>
+</html>
